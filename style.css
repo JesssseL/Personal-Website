@@ -1,4 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+/* -------------
+ General Webpage
+ ------------- */
 html {
   height: 100%;
   width: 100%;
+}
+
+:root {
+  --alt-background: #e6c7cc;
+  --accentRed: #a86675;
+  --accentYellow: #efbc82;
+}
+
+.alt-font {
+  font-family: 'DM Serif Display', serif;
+}
+
+body {
+  background-color: var(--alt-background) !important;
+}
+
+.box {
+  background-color: #fff;
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.homepage {
+  background-image: url('homeImg.jpg');
+  background-size: cover;
+  background-position: center center;
+  padding: 150px 0;
+  background-color: var(--alt-background);
+  color: white;
+}
+
+/* -------------
+     Nav Bar 
+ ------------- */
+a:link,
+a:visited {
+  color: var(--accentRed);
+}
+
+a:hover {
+  color: var(--accentYellow) !important;
+}
+
+/* -------------
+  Language List
+ ------------- */
+#used-languages {
+  list-style: none;
+  padding: 0px;
+}
+
+.language, .blank-language {
+  background-color: var(--accentYellow);
+  border-radius: 10px;
+  margin-top: 5px;
+  padding: 2px;
+  height: 25px;
+  font-size: 15px;
+}
+.blank-language {
+  background: none;
+}
+
+/* -------------
+   Card Hover 
+ ------------- */
+.space{
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 1.5px;
+  padding: 2px;
+  height: 25px;
+  font-size: 15px;
+  display: none;
+}
+.card {
+  background: linear-gradient(to top, white 50%, var(--accentRed) 50%);
+  background-size: 200% 200%;
+  background-position: bottom;
+  transition: 0.5s;
+
+  .proj-info {
+    display: inline;
+  }
+
+  .proj-btn {
+    display: none;
+  }
+}
+
+.card:hover {
+  color: white;
+  background-position: top;
+
+  .text-body-secondary {
+    color: lightgrey !important;
+  }
+
+  .language, .blank-language{
+    background-color: var(--accentRed);
+    color: var(--accentRed);
+  }
+
+  .btn:hover {
+    background: var(--bs-gray-100);
+    color: initial;
+  }
+
+  .space {
+    display: block;
+  }
+
+  .proj-info {
+    display: none;
+  }
+
+  .proj-btn {
+    display: inline;
+    height: 25px;
+  }
 }

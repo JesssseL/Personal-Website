@@ -1,2 +1,2 @@
-# Personal-Website
-A Basic HTML/CSS website 
+# My Personal Website
+A Basic Portfolio HTML/CSS website using bootstrap

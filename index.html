@@ -13,44 +13,28 @@
 <body data-bs-spy="scroll" data-bs-target="#navbar">
   <!-- Homepage -->
   <section id="home">
-    <div class="homepage box">
-      <h1>Jessica Long</h1>
-      <p> Welcome! I’m Jess an aspiring software engineer <br>
+    <div class="homepage text-center">
+      <h1 class="alt-font">Hi, I'm Jess!</h1>
+      <p> An aspiring software engineer <br>
         currently studying at Bournemouth University. </p>
-
-      <!-- Links -->
-      <div class="links container">
-        <a href="https://www.linkedin.com/in/jessica-long-bb7b75282/">
-          <p class="link"> LinkedIn </p>
-        </a>
-        <a href="index.html">
-          <p class="link"> CV </p>
-        </a>
-        <a href="#contact">
-          <p class="link"> Contact </p>
-        </a>
-      </div>
     </div>
   </section>
-
-  <br>
-
 
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar sticky-top bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Jessica Long</a>
+      <a class="navbar-brand alt-font" href="#">Jessica Long</a>
 
       <!-- Links -->
       <ul class="nav nav-underline justify-content-end">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">Home</a>
+          <a class="nav-link" aria-current="page" href="#home">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="https://www.linkedin.com/in/jessica-long-bb7b75282/">LinkedIn</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#about">CV</a>
+          <a class="nav-link" href="#projects">CV</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#contact">Contact Me</a>
@@ -59,55 +43,128 @@
     </div>
   </nav>
 
+  <br>
+
   <!-- About Me -->
   <section id="about">
-    <div class="box">
-      <h2> About Me... </h2>
-    </div>
-    <p class="about-text"> I am a motivated, well-prepared and hard-working person who will happily take on a challenge
-      to push myself. I
-      am confident when meeting new people and enjoy as working as part of a team. Currently looking for a software
-      engineering placement. <br><br> I am confident when using Python, JavaScript, Java and PHP. I believe I am a fast
-      and
-      adaptive learner who will be ready to face the challenges presented to me during a placement. </p>
-  </section>
+    <div class="container">
+      <div class="box">
+        <h2 class="alt-font"> About Me... </h2>
 
+        <p class="about-text"> I am a motivated, well-prepared and hard-working person who will happily take on a
+          challenge
+          to push myself. I
+          am confident when meeting new people and enjoy as working as part of a team. Currently looking for a
+          software
+          engineering placement. <br><br> I am confident when using Python, JavaScript, Java and PHP. I believe I am
+          a fast
+          and
+          adaptive learner who will be ready to face the challenges presented to me during a placement. </p>
+
+      </div>
+    </div>
+    </div>
+  </section>
+  <br>
   <br>
 
   <!-- Recent Projects -->
-  <section id="projects">
-    <h2 class="header"> Recent Projects </h2>
+  <section id="projects" class="container">
+    <h2 class="alt-font text-center"> Recent Projects </h2>
     <br>
 
-    <div id="projects" class="container">
-      <div class="project box">
-        <h3> Project 1 </h3>
-        <p> Basic Info Here</p>
-        <p class="language"> Language Used </p>
+    <div class="row">
+      <!-- Project 1 -->
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <!-- Name -->
+          <h3 class="card-header alt-font text-center"> Project 1 </h3>
+          <div class="card-body">
+            <!-- Proj Info -->
+            <p class="card-text"> Basic Info Here</p>
+            <!-- Proj Date -->
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            <!-- Languages -->
+            <ul id="used-languages" class="proj-info text-center mb-0">
+              <li class="language">Language</li>
+              <li class="language">Language</li>
+              <li class="blank-language"></li>
+            </ul>
+            <!-- Link -->
+            <div class=" text-center">
+              <div class="space"></div>
+              <a href="#" class="proj-btn btn btn-light">Find Out More</a>
+              <div class="space"></div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="project box">
-        <h3> Project 2 </h3>
-        <p> Basic Info Here</p>
-        <p class="language"> Language Used </p>
+      <!-- Project 2 -->
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <!-- Name -->
+          <h3 class="card-header alt-font text-center"> Project 2 </h3>
+          <div class="card-body">
+            <!-- Proj Info -->
+            <p class="card-text"> Basic Info Here</p>
+            <!-- Proj Date -->
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            <!-- Languages -->
+            <ul id="used-languages" class="proj-info text-center mb-0">
+              <li class="language">Language</li>
+              <li class="language">Language</li>
+              <li class="blank-language"></li>
+            </ul>
+            <!-- Link -->
+            <div class=" text-center">
+              <div class="space"></div>
+              <a href="#" class="proj-btn btn btn-light">Find Out More</a>
+              <div class="space"></div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="project box">
-        <h3> Project 3 </h3>
-        <p> Basic Info Here</p>
-        <p class="language"> Language Used </p>
+      <!-- Project 3 -->
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <!-- Name -->
+          <h3 class="card-header alt-font text-center"> Project 3 </h3>
+          <div class="card-body">
+            <!-- Proj Info -->
+            <p class="card-text"> Basic Info Here</p>
+            <!-- Proj Date -->
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            <!-- Languages -->
+            <ul id="used-languages" class="proj-info text-center mb-0">
+              <li class="language">Language</li>
+              <li class="language">Language</li>
+              <li class="blank-language"></li>
+            </ul>
+            <!-- Link -->
+            <div class=" text-center">
+              <div class="space"></div>
+              <a href="#" class="proj-btn btn btn-light">Find Out More</a>
+              <div class="space"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
   </section>
 
   <br>
 
   <!-- Contact Me -->
-  <section id="contact" class="box">
-    <h2> Contact Me </h2>
-    <p> if you have any questions please do not hesitate to reach out </p>
-    <p> Email: jessicaemilylong@hotmail.co.uk</p>
-    <p> Phone: 07716370206</p>
+  <section id="contact" class="container-fluid">
+    <div class="box">
+      <h2 class="alt-font"> Contact Me </h2>
+      <p> if you have any questions please do not hesitate to reach out </p>
+      <p> Email: jessicaemilylong@hotmail.co.uk</p>
+      <p> Phone: 07716370206</p>
+    </div>
   </section>
 
   <!-- Just Incase -->
@@ -117,7 +174,7 @@
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  
+
 </body>
 
 </html>
