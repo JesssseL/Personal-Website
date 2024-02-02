@@ -1,2 +1,4 @@
 # My Personal Website
-A Basic Portfolio HTML/CSS website using bootstrap
+Designed in Figma then coded in Replit. Built with HTML and CSS and Bootstrap. All text is set to the Bootstrap Default or 'DM Serif Display' as an Accent.
+
+This Project was completed to help me further explore Bootstrap and publish my portfolio on the internet.
