@@ -8,9 +8,20 @@ html {
   width: 100%;
 }
 
+/* Original Colour Pallet
 :root {
+  --main-background: #f2f2f2;
   --alt-background: #e6c7cc;
   --accentRed: #a86675;
+  --accentYellow: #efbc82;
+}*/
+
+
+:root {
+  --main-background: #EEE5DC;
+  --alt-background: #DFB9A1;
+  --accentRed: #C78581;
+  --accentDeaper: #BA6A6D;
   --accentYellow: #efbc82;
 }
 
@@ -23,7 +34,7 @@ body {
 }
 
 .box {
-  background-color: #fff;
+  background-color: var(--main-background);
   padding: 30px;
   margin-top: 20px;
   border-radius: 10px;
@@ -36,7 +47,7 @@ body {
   background-position: center center;
   padding: 150px 0;
   background-color: var(--alt-background);
-  color: white;
+  color: var(--main-background);
 }
 
 /* -------------
@@ -44,7 +55,7 @@ body {
  ------------- */
 a:link,
 a:visited {
-  color: var(--accentRed);
+  color: var(--accentDeaper);
 }
 
 a:hover {
@@ -84,7 +95,7 @@ a:hover {
   display: none;
 }
 .card {
-  background: linear-gradient(to top, white 50%, var(--accentRed) 50%);
+  background: linear-gradient(to top, var(--main-background) 50%, var(--accentRed) 50%);
   background-size: 200% 200%;
   background-position: bottom;
   transition: 0.5s;
@@ -99,7 +110,7 @@ a:hover {
 }
 
 .card:hover {
-  color: white;
+  color: var(--main-background);;
   background-position: top;
 
   .text-body-secondary {
@@ -131,6 +142,22 @@ a:hover {
 }
 
 /* -------------
+      List 
+ ------------- */
+#list-align{
+  display: flex;
+  text-align: left;
+}
+
+.list-col {
+  flex: 1;
+}
+
+.list-space {
+  flex: 0.25;
+}
+
+/* -------------
  Additional Bits
  ------------- */
 .side-block {
@@ -154,3 +181,4 @@ a:hover {
   background-color: black;
   height: 0.4vw;
 }
+
