@@ -62,6 +62,7 @@ a:visited {
 a:hover {
   color: var(--accentYellow) !important;
 }
+
 .bottom-link:hover {
   color: var(--accentRed) !important;
 }
@@ -74,7 +75,8 @@ a:hover {
   padding: 0px;
 }
 
-.language, .blank-language {
+.language,
+.blank-language {
   background-color: var(--accentYellow);
   border-radius: 10px;
   margin-top: 5px;
@@ -82,6 +84,7 @@ a:hover {
   height: 25px;
   font-size: 15px;
 }
+
 .blank-language {
   background: none;
 }
@@ -89,7 +92,7 @@ a:hover {
 /* -------------
    Card Hover 
  ------------- */
-.space{
+.space {
   border-radius: 10px;
   margin-top: 5px;
   margin-bottom: 1.5px;
@@ -98,6 +101,7 @@ a:hover {
   font-size: 15px;
   display: none;
 }
+
 .card {
   background: linear-gradient(to top, var(--main-background) 50%, var(--accentRed) 50%);
   background-size: 200% 200%;
@@ -114,14 +118,16 @@ a:hover {
 }
 
 .card:hover {
-  color: var(--main-background);;
+  color: var(--main-background);
+  ;
   background-position: top;
 
   .text-body-secondary {
     color: lightgrey !important;
   }
 
-  .language, .blank-language{
+  .language,
+  .blank-language {
     background-color: var(--accentRed);
     color: var(--accentRed);
   }
@@ -148,7 +154,7 @@ a:hover {
 /* -------------
       List 
  ------------- */
-#list-align{
+#list-align {
   display: flex;
   text-align: left;
 }
@@ -173,13 +179,15 @@ a:hover {
   flex: 0.1;
   background-color: black;
 }
-.main{
+
+.main {
   flex: 20;
 }
 
 .no-block {
   flex: 1;
 }
+
 .wide-block {
   flex: 1;
   background-color: black;
@@ -193,23 +201,31 @@ a:hover {
   display: flex;
   align-items: center;
 }
+
 .job-dates {
   flex: 2
 }
+
 .job-title {
   flex: 1
 }
+
 .job-loc {
   font-style: italic;
 }
+
 .grade-hold {
   display: flex;
   gap: 1px;
 }
+
 .grade-title {
   flex: 2;
 }
-.grade-info1, .grade-info2, .grade-total {
+
+.grade-info1,
+.grade-info2,
+.grade-total {
   flex: 1;
 }
 
@@ -218,19 +234,39 @@ a:hover {
   --bs-accordion-active-bg: var(--main-background) !important;
   --bs-accordion-btn-focus-box-shadow: none !important;
 }
+
 .accordion-button::after {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-arrow-down-left-square' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm10.096 3.146a.5.5 0 1 1 .707.708L6.707 9.95h2.768a.5.5 0 1 1 0 1H5.5a.5.5 0 0 1-.5-.5V6.475a.5.5 0 1 1 1 0v2.768z'/%3E%3C/svg%3E") !important;
 }
 
+/* -------------
+   Scroll Bar
+ ------------- */
 ::-webkit-scrollbar {
-    width: 1vw;
+  width: 1vw;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: var(--main-background);;
+  background-color: var(--main-background);
+  ;
 }
 
 ::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background-color: var(--accentDeaper);
+  border-radius: 10px;
+  background-color: var(--accentDeaper);
+}
+
+/* -------------
+   Pop-Up!
+ ------------- */
+#alertToast {
+  position: fixed;
+  bottom: 1vw;
+  right: 1vw;
+  background: var(--accentRed);
+  z-index: 9999;
+}
+.btn-close {
+  outline: none !important;
+  box-shadow: none !important;
 }
